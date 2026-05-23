@@ -50,13 +50,55 @@ def main() -> None:
     st.markdown(
         """
         <style>
-            .main {background-color: #f8f9fa;}
-            h1 {color: #1f2937; font-weight: 600;}
+            .stApp {
+                background-color: #f8fafc;
+                color: #111827;
+            }
+            [data-testid="stHeader"] {
+                background-color: #f8fafc;
+            }
+            [data-testid="stAppViewContainer"] {
+                background-color: #f8fafc;
+            }
+            [data-testid="stMainBlockContainer"] {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                max-width: 1480px;
+            }
+            h1, h2, h3, p, span, label {
+                color: #111827 !important;
+            }
+            h1 {
+                font-weight: 700;
+                letter-spacing: 0;
+            }
             [data-testid="stMetric"] {
                 background-color: #ffffff;
                 border: 1px solid #e5e7eb;
                 border-radius: 8px;
-                padding: 16px;
+                padding: 18px 20px;
+                box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+                min-height: 118px;
+            }
+            [data-testid="stMetric"] * {
+                color: #111827 !important;
+            }
+            [data-testid="stMetricLabel"] {
+                color: #4b5563 !important;
+                font-weight: 600;
+            }
+            [data-testid="stMetricValue"] {
+                color: #0f172a !important;
+                font-weight: 700;
+            }
+            .stAlert {
+                background-color: #eff6ff;
+                border: 1px solid #bfdbfe;
+                color: #1e3a8a;
+            }
+            div[data-testid="stDataFrame"] {
+                border: 1px solid #e5e7eb;
+                border-radius: 8px;
             }
         </style>
         """,
@@ -75,6 +117,12 @@ def main() -> None:
             "Dashboard is ready. Populate data/raw/crash_labels_2025.csv to view insights."
         )
         return
+
+    if len(data) < 80:
+        st.info(
+            "Current view uses the tracked seed/template dataset. The interview-ready "
+            "target is 80-120 labelled incidents."
+        )
 
     validation = validate_crash_data(data)
     summary, by_weather = generate_risk_summary(data)
@@ -114,6 +162,15 @@ def main() -> None:
         title="Proportion of Secondary Impacts Preventable by Current ADAS",
         color_discrete_sequence=px.colors.qualitative.Set2,
     )
+    fig_pie.update_layout(
+        height=420,
+        paper_bgcolor="#ffffff",
+        plot_bgcolor="#ffffff",
+        font_color="#111827",
+        title_font_color="#111827",
+        legend_font_color="#111827",
+        margin={"l": 24, "r": 24, "t": 64, "b": 24},
+    )
     st.plotly_chart(fig_pie, use_container_width=True)
 
     st.subheader("Preventability by Weather Conditions")
@@ -123,6 +180,17 @@ def main() -> None:
         labels={"value": "Proportion", "weather": "Weather Condition"},
         barmode="group",
     )
+    fig_bar.update_layout(
+        height=420,
+        paper_bgcolor="#ffffff",
+        plot_bgcolor="#ffffff",
+        font_color="#111827",
+        title_font_color="#111827",
+        legend_font_color="#111827",
+        margin={"l": 24, "r": 24, "t": 64, "b": 48},
+    )
+    fig_bar.update_xaxes(gridcolor="#e5e7eb", linecolor="#cbd5e1")
+    fig_bar.update_yaxes(gridcolor="#e5e7eb", linecolor="#cbd5e1")
     st.plotly_chart(fig_bar, use_container_width=True)
 
     st.subheader("Labelled Dataset Preview")
