@@ -46,3 +46,4 @@ This product is designed to the standard I would deliver in a live HMRC risk pro
 - `docs/DEMO_SCRIPT.md` gives a timed 10-12 minute walkthrough.
 - `docs/PRESENTATION_OUTLINE.md` maps the slide story.
 - `docs/INTERVIEW_TALKING_POINTS.md` prepares concise responses for panel questions.
+- `docs/FINAL_INTERVIEW_BRIEFING.md` provides the final safe dry-run script and mock panel answers.
