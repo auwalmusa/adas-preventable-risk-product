@@ -22,6 +22,8 @@
 
 ## 5. Delivery Layer
 
-- Interactive Streamlit dashboard for stakeholders
+- Professional Streamlit dashboard in `dashboard/app.py`
+- Uses the Phase 4 pipeline modules for validation and analysis
+- Presents headline risk metrics, data quality checks, preventability distribution, weather breakdowns, and a labelled data preview
 
 This product is designed to the standard I would deliver in a live HMRC risk product.
