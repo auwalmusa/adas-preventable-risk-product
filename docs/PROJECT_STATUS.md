@@ -2,7 +2,7 @@
 
 ## Current Position
 
-The project has completed Phases 0-7 from `taskmaster.md` and is ready for the final presentation package phase.
+The project has completed Phases 0-8 from `taskmaster.md` and is ready for interview rehearsal and dataset scaling.
 
 ## Phase Progress
 
@@ -16,6 +16,7 @@ The project has completed Phases 0-7 from `taskmaster.md` and is ready for the f
 | Phase 5: Insight Generation & Visualisation | Complete | Professional Streamlit dashboard with headline metrics, QA snapshot, and Plotly visuals |
 | Phase 6: Testing & Final Polish | Complete | Expanded tests, README refresh, passing quality checks |
 | Phase 7: Documentation & Reproducibility | Complete | Reproducibility, QA, and labelling guides in `docs/` |
+| Phase 8: Technical Presentation Package | Complete | Executive briefing, demo script, presentation outline, and talking points |
 
 ## Sanity Check
 
@@ -26,6 +27,7 @@ The project has completed Phases 0-7 from `taskmaster.md` and is ready for the f
 - Phase 5 dashboard returns `200 OK` in a local Streamlit smoke test.
 - Phase 6 adds focused tests for validation and data loading behaviour.
 - Phase 7 documents setup, generated artifacts, labelling rules, QA checks, and reproducibility workflow.
+- Phase 8 provides a 10-12 minute presentation structure and interview-ready talking points.
 - The repository has no uncommitted tracked changes after the latest status check.
 - Generated raw metadata files are intentionally ignored and kept local.
 
@@ -33,4 +35,4 @@ The project has completed Phases 0-7 from `taskmaster.md` and is ready for the f
 
 - The final labelled dataset target is 80-120 high-quality labelled crash incidents, with 80 as the minimum interview-ready threshold.
 - Long compilation videos should be labelled at the incident/timestamp level, not counted as a single crash.
-- The next engineering step is to build final delivery assets: executive briefing, demo script, and presentation package.
+- The next project step is to scale labelling to 80-120 incidents and rehearse the presentation flow.

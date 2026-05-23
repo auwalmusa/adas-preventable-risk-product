@@ -39,3 +39,10 @@ This product is designed to the standard I would deliver in a live HMRC risk pro
 - `docs/REPRODUCIBILITY.md` explains setup, generated files, checks, extraction, and dashboard execution.
 - `docs/DATA_QUALITY_QA.md` documents automated and manual data quality rules.
 - `docs/LABELLING_GUIDE.md` standardises incident selection, timestamping, preventability decisions, and severity labels.
+
+## 8. Presentation Package
+
+- `docs/EXECUTIVE_BRIEFING.md` provides the senior stakeholder summary.
+- `docs/DEMO_SCRIPT.md` gives a timed 10-12 minute walkthrough.
+- `docs/PRESENTATION_OUTLINE.md` maps the slide story.
+- `docs/INTERVIEW_TALKING_POINTS.md` prepares concise responses for panel questions.
