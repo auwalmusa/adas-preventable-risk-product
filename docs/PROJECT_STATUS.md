@@ -2,7 +2,7 @@
 
 ## Current Position
 
-The project has completed Phases 0-6 from `taskmaster.md` and is ready for the next delivery/documentation phase.
+The project has completed Phases 0-7 from `taskmaster.md` and is ready for the final presentation package phase.
 
 ## Phase Progress
 
@@ -15,6 +15,7 @@ The project has completed Phases 0-6 from `taskmaster.md` and is ready for the n
 | Phase 4: Core Analytics Pipeline | Complete | `src/data_loader.py`, `src/validation.py`, `src/analysis.py`, tests |
 | Phase 5: Insight Generation & Visualisation | Complete | Professional Streamlit dashboard with headline metrics, QA snapshot, and Plotly visuals |
 | Phase 6: Testing & Final Polish | Complete | Expanded tests, README refresh, passing quality checks |
+| Phase 7: Documentation & Reproducibility | Complete | Reproducibility, QA, and labelling guides in `docs/` |
 
 ## Sanity Check
 
@@ -24,6 +25,7 @@ The project has completed Phases 0-6 from `taskmaster.md` and is ready for the n
 - Phase 4 pipeline loads labels, validates core quality rules, and generates headline risk metrics.
 - Phase 5 dashboard returns `200 OK` in a local Streamlit smoke test.
 - Phase 6 adds focused tests for validation and data loading behaviour.
+- Phase 7 documents setup, generated artifacts, labelling rules, QA checks, and reproducibility workflow.
 - The repository has no uncommitted tracked changes after the latest status check.
 - Generated raw metadata files are intentionally ignored and kept local.
 

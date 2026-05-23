@@ -33,3 +33,9 @@ This product is designed to the standard I would deliver in a live HMRC risk pro
 - Validation tests confirm quality metrics and invalid-count behaviour.
 - Data loader tests confirm column standardisation, date parsing, and missing-file handling.
 - CI runs linting, formatting checks, and the full pytest suite on every push and pull request.
+
+## 7. Documentation & Reproducibility
+
+- `docs/REPRODUCIBILITY.md` explains setup, generated files, checks, extraction, and dashboard execution.
+- `docs/DATA_QUALITY_QA.md` documents automated and manual data quality rules.
+- `docs/LABELLING_GUIDE.md` standardises incident selection, timestamping, preventability decisions, and severity labels.
