@@ -15,9 +15,10 @@
 - Strict data dictionary with clear labelling rules
 - Consistent schema for reproducibility and auditability
 
-## 4. Core Pipeline (upcoming)
+## 4. Core Pipeline
 
-- Modular Python code with validation, analysis, and visualisation
+- Modular Python code for loading labelled data, validating quality rules, and producing risk summaries
+- Tested modules in `src/data_loader.py`, `src/validation.py`, and `src/analysis.py`
 
 ## 5. Delivery Layer
 
