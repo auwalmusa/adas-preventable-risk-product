@@ -27,3 +27,9 @@
 - Presents headline risk metrics, data quality checks, preventability distribution, weather breakdowns, and a labelled data preview
 
 This product is designed to the standard I would deliver in a live HMRC risk product.
+
+## 6. Testing & Final Polish
+
+- Validation tests confirm quality metrics and invalid-count behaviour.
+- Data loader tests confirm column standardisation, date parsing, and missing-file handling.
+- CI runs linting, formatting checks, and the full pytest suite on every push and pull request.

@@ -2,7 +2,7 @@
 
 ## Current Position
 
-The project has completed Phases 0-5 from `taskmaster.md` and is ready to move into Phase 6: Product Delivery Layer.
+The project has completed Phases 0-6 from `taskmaster.md` and is ready for the next delivery/documentation phase.
 
 ## Phase Progress
 
@@ -14,7 +14,7 @@ The project has completed Phases 0-5 from `taskmaster.md` and is ready to move i
 | Phase 3: Data Model & Labelling Process | Complete | `data/raw/crash_labels_2025.csv`, `docs/data_dictionary.md` |
 | Phase 4: Core Analytics Pipeline | Complete | `src/data_loader.py`, `src/validation.py`, `src/analysis.py`, tests |
 | Phase 5: Insight Generation & Visualisation | Complete | Professional Streamlit dashboard with headline metrics, QA snapshot, and Plotly visuals |
-| Phase 6: Product Delivery Layer | Next | Demo-ready dashboard refinement and one-page executive briefing |
+| Phase 6: Testing & Final Polish | Complete | Expanded tests, README refresh, passing quality checks |
 
 ## Sanity Check
 
@@ -23,6 +23,7 @@ The project has completed Phases 0-5 from `taskmaster.md` and is ready to move i
 - Tests pass with `python -m pytest tests/ -v`.
 - Phase 4 pipeline loads labels, validates core quality rules, and generates headline risk metrics.
 - Phase 5 dashboard returns `200 OK` in a local Streamlit smoke test.
+- Phase 6 adds focused tests for validation and data loading behaviour.
 - The repository has no uncommitted tracked changes after the latest status check.
 - Generated raw metadata files are intentionally ignored and kept local.
 
@@ -30,4 +31,4 @@ The project has completed Phases 0-5 from `taskmaster.md` and is ready to move i
 
 - The final labelled dataset target is 80-120 high-quality labelled crash incidents, with 80 as the minimum interview-ready threshold.
 - Long compilation videos should be labelled at the incident/timestamp level, not counted as a single crash.
-- The next engineering step is to build Phase 6 delivery assets: demo-ready polish and a one-page executive briefing.
+- The next engineering step is to build final delivery assets: executive briefing, demo script, and presentation package.
