@@ -8,7 +8,7 @@ The project has completed Phases 0-8 from `taskmaster.md` and is ready for inter
 
 | Phase | Status | Evidence |
 | --- | --- | --- |
-| Phase 0: Business Requirements & Scoping | Complete | `README.md`, `taskmaster.md`, `docs/PROJECT_OVERVIEW.md` |
+| Phase 0: Business Requirements & Scoping | Complete | `README.md`, `taskmaster.md`, `docs/BUSINESS_REQUIREMENTS.md`, `docs/PROJECT_OVERVIEW.md` |
 | Phase 1: Project Setup & Governance | Complete | Folder structure, `requirements.txt`, `Makefile`, tests, CI workflow |
 | Phase 2: Data Ingestion & Automation | Complete for seed dataset | `src/youtube_extractor.py` extracts metadata for 25 validated source videos |
 | Phase 3: Data Model & Labelling Process | Complete | `data/raw/crash_labels_2025.csv`, `docs/data_dictionary.md` |
@@ -30,6 +30,7 @@ The project has completed Phases 0-8 from `taskmaster.md` and is ready for inter
 - Phase 7 documents setup, generated artifacts, labelling rules, QA checks, and reproducibility workflow.
 - Phase 8 provides a 10-12 minute presentation structure and interview-ready talking points.
 - Final briefing avoids unsupported claims and distinguishes current seed data from target labelled dataset.
+- Formal business requirements are documented before the technical implementation.
 - The repository has no uncommitted tracked changes after the latest status check.
 - Generated raw metadata files are intentionally ignored and kept local.
 

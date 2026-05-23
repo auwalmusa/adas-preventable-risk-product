@@ -40,6 +40,7 @@ I built this as a full product rather than a one-off notebook: it includes data 
 
 Show:
 
+- `docs/BUSINESS_REQUIREMENTS.md`
 - `src/`
 - `tests/`
 - `dashboard/`
@@ -48,7 +49,7 @@ Show:
 
 Say:
 
-"I used a production-style structure so the work is maintainable. The analytical logic sits in `src/`, tests are separate, the dashboard is in `dashboard/`, and all methodology and interview documentation is in `docs/`."
+"I started with business requirements before writing analysis code. The repo then follows a production-style structure so the work is maintainable: analytical logic in `src/`, tests in `tests/`, dashboard code in `dashboard/`, and methodology in `docs/`."
 
 ### 2. Data Ingestion
 
