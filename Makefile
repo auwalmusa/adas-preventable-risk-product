@@ -1,11 +1,14 @@
-﻿.PHONY: setup lint test run
+.PHONY: setup lint test run
 
 setup:
-pip install -r requirements.txt
+	python -m pip install -r requirements.txt
 
 lint:
-ruff check src tests
-black --check src tests
+	python -m ruff check src tests dashboard
+	python -m black --check src tests dashboard
 
 test:
-pytest tests/ -v
+	python -m pytest tests/ -v
+
+run:
+	python -m streamlit run dashboard/app.py

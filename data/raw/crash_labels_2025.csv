@@ -1,0 +1,2 @@
+date_watched,video_id,video_title,video_url,country,weather,road_type,crash_timestamp_start,initial_impact_unavoidable,reason_unavoidable,num_total_impacts,num_secondary_impacts,secondary_preventable_by_adas,adas_features_needed,main_human_error_in_secondary,estimated_severity,notes
+2025-05-23,EXAMPLE001,Sample Dashcam Crash,https://www.youtube.com/watch?v=HQ_FRYebb3o,UK,Rain,Motorway,1:45,Yes,Sudden heavy rain reduced visibility,4,3,Yes,AEB + FCW,Following too close,Moderate,Classic chain reaction on wet road
